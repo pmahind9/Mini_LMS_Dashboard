@@ -1,0 +1,282 @@
+/* Reset default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+}
+
+/* Header styles */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+}
+
+/* Navigation styles */
+nav {
+    background-color: #444;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 1rem;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Main content styles */
+main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 2rem;
+}
+
+/* Section styles */
+section {
+    background-color: rgb(243, 234, 219);;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 1.5rem;
+    margin: 1rem;
+    max-width: 400px;
+    width: 100%;
+}
+
+section h2 {
+    margin-bottom: 1rem;
+}
+
+/* Course card styles */
+#course-listing {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.course-card {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 1rem;
+    width: 300px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    background-size: cover;
+    background-position: center;
+    color: white;
+}
+
+.course-card:hover {
+    background-color: #e0e0e0;
+}
+
+.course-card img {
+    width: 100%;
+    border-radius: 5px 5px 0 0;
+    margin-bottom: 0.5rem;
+}
+
+/* Styles for combined course details and progress tracking section */
+#course-details-progress {
+    display: flex;
+    flex-direction: column;
+    height: calc(100vh - 220px); /* Adjusted for header, nav, and footer height */
+    max-width: 400px;
+    width: 100%;
+}
+
+#course-details, #progress-tracking {
+    flex: 1;
+    padding: 1.5rem;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin: 1rem 0;
+}
+
+#course-details {
+    background-color: #f9f9f9;
+}
+
+#progress-tracking {
+    background-color: #eef2f3;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1.5rem;
+    margin-top: 1rem;
+}
+
+/* Style for progress bar */
+progress {
+    width: 100%;
+    height: 20px;
+    margin-top: 0.5rem;
+    appearance: none; /* Remove default styling */
+    background-color: #ddd; /* Background color */
+    border-radius: 10px; /* Rounded corners */
+}
+
+progress::-webkit-progress-bar {
+    background-color: #ddd; /* Background color */
+    border-radius: 10px; /* Rounded corners */
+}
+
+progress::-webkit-progress-value {
+    background-color: #4CAF50; /* Progress bar color */
+    border-radius: 10px; /* Rounded corners */
+}
+
+progress::-moz-progress-bar {
+    background-color: #4CAF50; /* Progress bar color */
+    border-radius: 10px; /* Rounded corners */
+}
+
+/* Style for progress text */
+.progress-text {
+    margin-top: 0.5rem;
+    font-size: 1rem;
+    color: #777;
+}
+
+/* Footer styles */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+/* Styles for combined course details and progress tracking section */
+#course-details-progress {
+    display: flex;
+    flex-direction: column;
+    height: calc(100vh - 220px); /* Adjusted for header, nav, and footer height */
+    max-width: 400px;
+    width: 100%;
+}
+
+#course-details, #progress-tracking {
+    flex: 1;
+    padding: 1.5rem;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin: 1rem 0;
+}
+
+#course-details {
+    background-color: #f9f9f9;
+}
+
+#progress-tracking {
+    background-color: #eef2f3;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem; /* Equal padding on all sides */
+    margin: 1rem 0; /* Equal margin on top and bottom */
+}
+
+/* Style for progress bar */
+progress {
+    width: 100%;
+    height: 20px;
+    margin-top: 0.5rem; /* Add margin-top to separate from the progress header */
+}
+
+/* Style for progress text */
+#progress-text {
+    margin-top: 0.5rem; /* Adjust margin from the progress bar */
+}
+
+
+/* Teacher upload form styles */
+#teacher-upload {
+    background-color: rgb(243, 234, 219);
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 1.5rem;
+    
+    max-width: 400px;
+    width: 100%;
+}
+
+#teacher-upload h2 {
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+    color: #333;
+}
+
+#teacher-upload form {
+    display: flex;
+    flex-direction: column;
+    margin: 4rem;
+}
+
+#teacher-upload label {
+    font-size: 1rem;
+    color: #444;
+    margin-bottom: 0.5rem;
+}
+
+#teacher-upload input[type="text"],
+#teacher-upload input[type="number"],
+#teacher-upload textarea {
+    padding: 0.5rem;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    margin-bottom: 1rem;
+}
+
+#teacher-upload textarea {
+    resize: vertical; /* Allow vertical resizing of textarea */
+}
+
+#teacher-upload button[type="submit"] {
+    padding: 0.5rem 1rem;
+    margin-right: 5%;
+    font-size: 1rem;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#teacher-upload button[type="submit"]:hover {
+    background-color: #0056b3;
+}
+.new-course {
+    background-color: #ac903c; /* Example background color */
+    /* Add any other styles for the newly added course card */
+}
+
+
+

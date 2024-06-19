@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini LMS Dashboard</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <header>
+        <h1>My LMS Dashboard</h1>
+    </header>
+
+
+    <main>
+        <section id="course-listing">
+            <h2>Available Courses</h2>
+            <!-- Course cards will be populated here by JavaScript -->
+        </section>
+
+        <section id="course-details-progress">
+            <div id="course-details">
+                <h2>Course Details</h2>
+                <!-- Show detailed info about selected course -->
+            </div>
+
+            <div id="progress-tracking">
+                <h2>My Progress</h2>
+                <p id="progress-text">0% Complete</p>
+                <progress id="progress-bar" value="0" max="100"></progress> </div>
+        </section>
+
+        <section id="teacher-upload">
+            <h2> Course Upload</h2>
+            <form id="course-upload-form">
+                <div>
+                    <label for="course-title">Course Title:</label><br>
+                    <input type="text" id="course-title" name="course-title" required><br>
+                </div>
+                <div>
+                    <label for="course-description">Course Description:</label><br>
+                    <textarea id="course-description" name="course-description" rows="4" required></textarea><br>
+                </div>
+                <div>
+                    <label for="course-lessons">Number of Lessons:</label><br>
+                    <input type="number" id="course-lessons" name="course-lessons" min="1" required><br>
+                </div>
+                <button type="submit">Upload Course</button>
+            </form>
+        </section>
+        
+    </main>
+
+    <footer>
+        <p>© 2024 My LMS</p>
+    </footer>
+
+    <script src="index.js"></script> <!-- Link to your JavaScript file -->
+</body>
+</html>
